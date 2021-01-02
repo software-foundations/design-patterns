@@ -53,3 +53,4 @@ if __name__ == '__main__':
 	for i in range(10):
 		vehicle = VehicleFactory(choice(available_vehicles))
 		vehicle.search_client()
+		

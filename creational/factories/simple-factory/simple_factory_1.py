@@ -10,22 +10,30 @@ class Veihcle(metaclass=ABC):
 	def search_client(self) -> None: pass
 
 
-class LuxCar(Veihcle):	
+class LuxCar(Veihcle):
+
+	# overrides the search client abstract method at Vehicle abstract class
 	def search_client(self) -> None:
 		print('Lux Car is looking for the client')
 
 
 class PopularCar(Veihcle):
+
+	# overrides the search client abstract method at Vehicle abstract class
 	def search_client(self) -> None:
 		print('Popular Car is looking for the client')
 
 
 class PopularMotorcycle(Veihcle):
+
+	# overrides the search client abstract method at Vehicle abstract class
 	def search_client(self) -> None:
 		print('Popular Motorcycle is looking for the client')
 
 
 class LuxMotorcycle(Veihcle):
+
+	# overrides the search client abstract method at Vehicle abstract class
 	def search_client(self) -> None:
 		print('Lux Motorcycle is looking for the client')
 
@@ -34,6 +42,7 @@ class VehicleFactory:
 	"""
 	Veihcle class (acting as an interface) which represents a taxi company
 	"""
+	
 	@staticmethod
 	def get_vehicle(veihcle_type: str) -> Veihcle:
 		if veihcle_type == 'LuxCar':

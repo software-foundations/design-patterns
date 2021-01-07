@@ -63,6 +63,17 @@ class VehicleFactory(ABC):
     """
     Abstract Vehicle Factory
     """
+
+    """
+    get lux and pop vehicles will be overrided
+    by the filial. It consider that each filial
+    has their own ways/RULES to get lux and pop
+    vehicles, like different costs or taxes.
+    
+    Observ that 'if' is not used in neither of filial
+    implementations. It's accourding to open/closed
+    SOLID principle
+    """
     @staticmethod
     @abstractmethod
     def get_lux_car() -> LuxVehicle: pass

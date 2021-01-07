@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Veihcle(ABC):
 	"""
 	Abstract Veihcle class
@@ -7,26 +8,32 @@ class Veihcle(ABC):
 	@abstractmethod
 	def search_client(self) -> None: pass
 
+
 class LuxCar(Veihcle):
 	def search_client(self) -> None:
 		print('Lux Car is looking for the client')
+
 
 class PopularCar(Veihcle):
 	def search_client(self) -> None:
 		print('Popular Car is looking for the client')
 
+
 class PopularMotorcycle(Veihcle):
 	def search_client(self) -> None:
 		print('Popular Motorcycle is looking for the client')
+
 
 class LuxMotorcycle(Veihcle):
 	def search_client(self) -> None:
 		print('Lux Motorcycle is looking for the client')
 
+
 class VehicleFactory:
 	"""
 	Veihcle class (acting as an interface) which represents a taxi company
-	The Vehicle Factory that will be instantiated and act like a wrapper involving the vehicle object into the factory instance
+	The Vehicle Factory that will be instantiated and act like a wrapper 
+	involving the vehicle object into the factory instance
 	"""
 	def __init__(self, veihcle_type) -> None:
 		self.vehicle = self.get_vehicle(veihcle_type)
@@ -43,6 +50,9 @@ class VehicleFactory:
 			return LuxMotorcycle()
 		assert 0, 'Vehicle does not exist'
 
+	# this search client method envolve the real
+	# search client method implemented byt the
+	# real Vehicle object
 	def search_client(self) -> None:
 		self.vehicle.search_client()
 
@@ -53,4 +63,3 @@ if __name__ == '__main__':
 	for i in range(10):
 		vehicle = VehicleFactory(choice(available_vehicles))
 		vehicle.search_client()
-		

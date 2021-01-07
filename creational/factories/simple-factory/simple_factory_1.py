@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Veihcle(ABC):
+class Veihcle(metaclass=ABC):
 	"""
 	Abstract Veihcle class\
 	"""
@@ -13,6 +13,7 @@ class Veihcle(ABC):
 class LuxCar(Veihcle):	
 	def search_client(self) -> None:
 		print('Lux Car is looking for the client')
+
 
 class PopularCar(Veihcle):
 	def search_client(self) -> None:

@@ -72,7 +72,12 @@ class VehicleFactory(ABC):
     
     Observ that 'if' is not used in neither of filial
     implementations. It's accourding to open/closed
+<<<<<<< HEAD
     SOLID principle
+=======
+    SOLID principle: open to extension, closed to
+    modification
+>>>>>>> (creational/factories/abstract_factory.py) some comments, like open/closed SOLID principle
     """
     @staticmethod
     @abstractmethod
@@ -144,7 +149,6 @@ class Client():
         for factory in [VehicleFactoryFilial01(), VehicleFactoryFilial02()]:
 
             # lux vehicles
-
             lux_car = factory.get_lux_car()
             lux_car.search_client()
 

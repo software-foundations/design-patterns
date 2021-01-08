@@ -13,3 +13,5 @@ Create objects
 - Simple Factory
 - Factory Method
 - Abstract Factory
+
+## Singleton

@@ -15,3 +15,8 @@ Create objects
 - Abstract Factory
 
 ## Singleton
+
+- with decorator (@singleton)
+- with classes (using __call__ and executes __init__ only when instantiate)
+
+## Monostate (a singleton variation)

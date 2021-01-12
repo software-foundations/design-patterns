@@ -24,9 +24,13 @@ from typing import Dict
 
 class Singleton(type):
     _instances: Dict = {}
+    print('_instances: ', _instances)
 
+    # The __call__ is executed putting '()' in front of the instance, making the object acts like a function
+    # The __call__ method is invoke when the class is invoked
+    # the class is invoke only one time, when the object is created
     def __call__(cls, *args, **kwargs):
-        if cls not in cls._instances:
+        if cls not in cls._instances: # check if the class object is in the keys of the cls_.instance
             cls._instances[cls] = super().__call__(*args, **kwargs)
         return cls._instances[cls]
 

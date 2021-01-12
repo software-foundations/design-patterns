@@ -4,10 +4,12 @@ even when the object already exists
 """
 
 def singleton(the_class):
+    # {the_class: the_class(*args, **kwargs)}
     instances = {} # storage the object
 
     def get_class(*args, **kwargs):
-        if the_class not in instances:
+        print('instances: ', instances)
+        if the_class not in instances: # check exists a key of the class in the dictionary
             instances[the_class] = the_class(*args, **kwargs) # instantiate
         return instances[the_class]
 

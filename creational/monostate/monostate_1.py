@@ -29,12 +29,9 @@ class MonoStateSimple(StringReprMixin):
         # so all the classes instances inherance this
         # as well as all instances have their __dict__
         # overrided by this
-        # al remenber that all instance execute __init__ when instantiated
-<<<<<<< HEAD
-        self.__dict__ = self._state # THIS LINE IS TOO MUCH IMPORTANT
-=======
+        # al remenber that all instance execute __init__ when instantiated        
+
         self.__dict__ = self._state # THIS LINE IS TOO MUCH IMPORTANT, but i think it should be cls._state instead of self._state
->>>>>>> (monostate_1.py, at /creational/monostate/) -> overriding the __repr__ and the __str__ in the instances by the __init__, which overrides the self.__dict__ by the self._state)
 
         if nome is not None:
             self.nome = nome
@@ -45,6 +42,11 @@ class MonoStateSimple(StringReprMixin):
 
 if __name__ == "__main__":
     m1 = MonoStateSimple(nome='Luiz')
+    print(m1, id(m1))    
     m2 = MonoStateSimple(sobrenome='Miranda')
-    print(m1)
-    print(m2)
+    print(m1, id(m1))
+    print(m2, id(m2))
+
+    """
+    As we can see, m1 and m2 are different objects with the same property
+    """

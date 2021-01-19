@@ -26,6 +26,9 @@ class User(StringReprMixin):
 # Interface/Abstract class has abstract methods
 # Doesn't have __init__ because it is an interface/abstract class
 class IUserBuilder(ABC):
+    """
+    Methods to be specializated by the builder instance
+    """
     @property
     @abstractmethod
     def result(self) -> User: pass

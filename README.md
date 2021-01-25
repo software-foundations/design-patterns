@@ -52,3 +52,15 @@ Wich objects aren't copiated with the attribution signal, pointing to the same m
 1.2 set
 1.3 dict
 1.4 class (the user can change it)
+
+---
+
+# Comportamental
+
+## Strategy
+
+It is a behavioral design pattern which aims to define a family of algorithms, encapsulating each one of the family and turn these interchangeable.
+
+Strategy allows that the algorithm varies independently of the clients that use it.
+
+- The open/closed principle: Entities should be opened to extensions, but closed to modifications

@@ -64,3 +64,14 @@ It is a behavioral design pattern which aims to define a family of algorithms, e
 Strategy allows that the algorithm varies independently of the clients that use it.
 
 - The open/closed principle: Entities should be opened to extensions, but closed to modifications
+
+## Observer
+
+The observer design pattern aims to define a dependency 1:n (one to many) between objects, in a way that when an object changes its state, all of its dependents are notified and automatically refreshed
+
+- An observer is an object which would like to be informed
+1. update() -> method in observer
+
+- An observable (subject) is the entity which generate informations to be notified to the observer
+1. getState() -> method in observable
+2. setState() -> method in observable

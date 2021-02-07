@@ -75,3 +75,16 @@ The observer design pattern aims to define a dependency 1:n (one to many) betwee
 - An observable (subject) is the entity which generate informations to be notified to the observer
 1. getState() -> method in observable
 2. setState() -> method in observable
+
+## Command
+
+Command aims to encapsulate a solicitation as an object,
+allowing parametrize clients with different solicitations,
+out the solicitations in a queue or register (making a log)
+the solicitations and suport operations that can be undone
+
+It is formed for:
+- A client (whose orquestrate everything);
+- A invoker (that invokes the solicitations);
+- One or various command objects (that make the ligation between the receiver and the action to be done);
+- A receiver (the object which will executes the action at the end).

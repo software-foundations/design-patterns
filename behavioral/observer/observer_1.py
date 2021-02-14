@@ -72,7 +72,8 @@ class Smartphone(IObserver):
 
 	def update(self) -> None:
 		observable_name = self.observable.__class__.__name__
-		print(f'{self.name} the object {observable_name} was updated => ', end='')
+		print(f'{self.name} the object {observable_name} \
+			was updated => ', end='')
 		print(f'{self.observable.state}')
 
 
@@ -82,7 +83,8 @@ class Notebook(IObserver):
 
 	def show(self):
 		state = self.observable.state
-		print('I am the notebook and i will another thing with the state update. ', state)
+		print('I am the notebook and i will another thing' + \
+			' with the state update. ', state)
 
 	def update(self) -> None:
 		self.show()
@@ -109,7 +111,9 @@ if __name__ == "__main__":
 
 
 
-	# empty dictionaries doesn't update the state, because there are no arguments to unpack
+	# empty dictionaries doesn't update the state, because there are no 
+	# arguments to unpack
+
 	weather_station.state = {}
 	weather_station.state = {}
 	weather_station.state = {}

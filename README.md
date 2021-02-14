@@ -88,3 +88,14 @@ It is formed for:
 - A invoker (that invokes the solicitations);
 - One or various command objects (that make the ligation between the receiver and the action to be done);
 - A receiver (the object which will executes the action at the end).
+
+## Template
+
+Template Method (behavioral) aims to define an algorithm in a method, postponing some steps to the subclasses by inheritance.
+
+Template method allows the subclasses some steps of an algorithm without changes its structure
+
+It is also possible to define hooks for the subclasses use whenever they have to.
+
+The Hollywood principle: "Don't Call Us, We'll Call You!"
+(IoC - Inversion of Control)

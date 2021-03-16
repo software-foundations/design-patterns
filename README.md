@@ -99,3 +99,9 @@ It is also possible to define hooks for the subclasses use whenever they have to
 
 The Hollywood principle: "Don't Call Us, We'll Call You!"
 (IoC - Inversion of Control)
+
+## State
+
+State aims (behavioral) aims to allow an object change its behavior when some internal state changes
+
+The object seams change its class

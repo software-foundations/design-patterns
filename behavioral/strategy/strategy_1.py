@@ -43,7 +43,6 @@ class CustomDiscount(DiscountStrategy):
 	def calculate(self, value: float) -> float:
 		return value * (1 - self.discount)
 
-
 if __name__ == '__main__':
 	twenty_percent = TwentyPercent()
 	fifty_discount = FiftyPercent()

@@ -105,3 +105,18 @@ The Hollywood principle: "Don't Call Us, We'll Call You!"
 State aims (behavioral) aims to allow an object change its behavior when some internal state changes
 
 The object seams change its class
+
+## Chain of responsibility
+
+Chain of responsibility (COR) is a behavioral pattern which aims to avoid the
+coupling of the sender of a request to the receiver by giving the responsability
+of treat the solicitation for more than one object.
+
+Chain the receiver objects passing the request along the chain ultil an object
+treat the request.
+
+In essence, a handler first receive the request and try to solve that and if it
+solve it, it send back the response, else, it pass the request to other handler
+who problably know to solve it and if it solve it, else, it pass the request to
+other request ... At the end, the request will be answered by one of the
+handlers.

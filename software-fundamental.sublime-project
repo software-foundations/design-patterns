@@ -16,6 +16,7 @@
 	],
 	"settings":
 	{
+		"python_interpreter": "/home/bruno/Documents/dev/software-fundamentals/venv-software-fundamentals/bin/python",
 		"python_virtualenv": "/home/bruno/Documents/dev/software-fundamentals/venv-software-fundamentals/bin/python"
 	}
 }

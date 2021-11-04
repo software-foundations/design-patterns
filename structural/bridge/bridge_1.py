@@ -25,6 +25,7 @@ class IRemoteControl(ABC):
 
 
 class RemoteControl(IRemoteControl):
+    """Concrete Remote Control"""
 
     def __init__(self, device: IDevice) -> None:
         self._device = device
@@ -41,7 +42,7 @@ class RemoteControl(IRemoteControl):
 
 
 class IDevice(ABC):
-
+    """ Abstract Device"""
     @property
     @abstractmethod
     def volume(self) -> int:
@@ -62,6 +63,7 @@ class IDevice(ABC):
 
 
 class TV(IDevice):
+    """Concrete Device"""
 
     def __init__(self) -> None:
         self._volume = 10
@@ -108,7 +110,10 @@ class Radio(TV):
 
 
 class RemoteControlWithMute(RemoteControl):
+    """Subclass of RemoteControl"""
+
     def mute(self) -> None:
+        """Mute the volume"""
         self._device.volume = 0
 
 

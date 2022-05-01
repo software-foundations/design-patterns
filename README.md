@@ -124,6 +124,27 @@ handlers.
 ## Mediator
 
 <div style="text-align:justify;">
-	<p>Mediator is a behavioral design pattern which aims to define an object which encapsulates the way of a set o objects interact to each other</p>
+	<p>Mediator is a behavioral design pattern which aims to define an object which encapsulates the way of a set of objects interact to each other</p>
 	<p>The mediator promote low accopling by avoiding that objects explicitly refers to each other, and allow many interactions regardless</p>
 </div>
+
+# Structural
+
+## Proxy
+
+- Proxy is a Class with the same interface of another
+- Proxy seams (but far) to decorator
+- Use proxy object instead of real object
+- Kinds of proxy
+    1. virtual: controll resource access
+    2. remote: control remote resource access
+    3. protection: control resource protection
+    4. inteligence: increase inteligence in resource access
+
+- Proxy can do many things:
+    1. Authenticate users
+    2. Create logs
+    3. Distribute services
+    4. Create cache
+    5. Create and destroy objects
+    6. Postpone

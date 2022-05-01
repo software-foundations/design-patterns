@@ -6,7 +6,15 @@
     1. virtual: controll resource access
     2. remote: control remote resource access
     3. protection: control resource protection
-    3. inteligence: increase inteligence in reource access
+    4. inteligence: increase inteligence in resource access
+
+- Proxy can do many things:
+    1. Authenticate users
+    2. Create logs
+    3. Distribute services
+    4. Create cache
+    5. Create and destroy objects
+    6. Postpone 
 """
 
 from __future__ import annotations
@@ -14,10 +22,9 @@ from abc import ABC, abstractmethod
 from time import sleep
 from typing import List, Dict
 
-
 class IUser(ABC):
     """Subject Interface"""
-    first_name: str
+    first_name: str    
     last_name: str
 
     @abstractmethod

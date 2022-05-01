@@ -55,7 +55,7 @@ Wich objects aren't copiated with the attribution signal, pointing to the same m
 
 ---
 
-# Comportamental
+# Behavioral
 
 ## Strategy
 
@@ -120,3 +120,10 @@ solve it, it send back the response, else, it pass the request to other handler
 who problably know to solve it and if it solve it, else, it pass the request to
 other request ... At the end, the request will be answered by one of the
 handlers.
+
+## Mediator
+
+<div style="text-align:justify;">
+	<p>Mediator is a behavioral design pattern which aims to define an object which encapsulates the way of a set o objects interact to each other</p>
+	<p>The mediator promote low accopling by avoiding that objects explicitly refers to each other, and allow many interactions regardless</p>
+</div>
